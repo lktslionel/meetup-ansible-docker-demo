@@ -1,0 +1,6 @@
+---
+- hosts: local
+  tasks:
+  - name: Create user meetup-lille-py
+    user: name=meetup-lille-py generate_ssh_key=yes ssh_key_bits=2048 ssh_key_file=.ssh/meetup-id_rsa
+
